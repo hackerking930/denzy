@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color:#E0E0E0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:20px;
+    font-family:'Poppins',sans-serif;
+    overflow-x: hidden;
+}
+#download {
+    height: 40px;
+    width: 150px;
+    font-family:'Poppins',sans-serif;
+    background-color:dodgerblue;
+    border:none;
+    color:#fff;
+    border-radius: 5px;
+    outline:none;
+}
+.invoice {
+    height: auto;
+    width: 50vw;
+    max-width: 700px;
+    background-color: white;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice .box {
+    height: auto;
+    display: flex;
+}
+.invoice .box .left  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    gap:5px;
+    border:1px solid black;
+    padding:10px;
+}
+.invoice .box .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    gap:5px;
+    border:1px solid black;
+    padding:10px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family:'Poppins',sans-serif;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  @media (max-width:700px) {
+    .invoice .box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .invoice .box .right , .invoice .box .left {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .invoice {
+        width:80vw;
+    }
+  }
